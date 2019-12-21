@@ -1,0 +1,20 @@
+[PROJECT]
+Primary File=Petros.exe
+Help File To Build=Context.HLP
+Database File=Context.DBF
+Run Command=Petros.exe
+Help Project File=Context.HPJ
+DefaultTopicFile=Context.DTO
+HelpMapFile=Context.HH
+ExeTime=1100566784, 29438771
+
+[DATA]
+ProjectType=0
+RHAttached=0
+StartMapNum=10000
+VBFormBorder=0
+NextTopicNum=2
+ControlCount=2
+TopicIdPrefix=IDH_
+DefaultText=1
+UpdRemind=1

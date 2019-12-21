@@ -1,0 +1,123 @@
+:Base Petros.hlp
+:Title Ñïðàâêà PETROS 2.0
+1 Introduction=Intro
+1 Requirements to the equipment and operational system=25
+1 Installation of PETROS-2=Install
+1 Getting started
+2 Principles of work with the program=General
+2 Initial data=AData
+2 Description fields and descriptors=Disc
+2 Data objects=DataObj
+2 Structure of PETROS-2 database=Dbs
+2 Bibliographic database=Bibl
+2 PETROS 2 main window=Mainw
+2 Menu and toolbar
+3 "Project" menu=MPROJECTS
+3 "View" menu=MView
+3 "Results" menu=MResults
+3 "Data" menu=MData
+3 "Action" menu=MAct
+3 "Diagram" menu=MGraph
+3 "Concentration" menu=MConc
+3 "Window" menu=MWin
+3 "Options" menu=MOpt
+3 "Help" menu=MHelp
+3 "Click – add to list" menu item=MCLICK
+1 Configuation of PETROS 2
+2 "General" page=OpGen
+2 "Input Options" page=OpInp
+2 "Concentration calculations" page=OpConc
+2 "Statistical calculations" page=OpStat
+2 "RHA method" page=OpRHA
+2 Descriptor editing window=OpEdDisc
+2 Synonyms editing window=OpSinon
+1 Working with projects
+2 For what projects are necessary=Project1
+2 Creation of a project=Project2
+2 Loading of a project=Project3
+2 Updating of a  project=Project4
+2 Data transfer from a project into the main database=Project5
+1 Input and import of data
+2 Input and import of initial data=In0
+2 New data set information window=In1
+2 Usage of "Periodic Table " for input of chemical formulas=Mend
+2 Window of input and editing of analytical data=In2
+2 Data import window=Im4
+2 Import of text files=Im5
+2 Import of data from MS Excel=MSExcel1
+2 Window of input and editing of bibliographic database=In7
+1 Search of data
+2 Queries panel=Q11
+2 View of SQL query text=Q2
+2 Panel of data sets=ND
+2 Panel of lists=LIST1
+2 Panel of list contents=List2
+2 SQL query builder
+3 Query builder window=Q3
+3 "Data set" page=Q4
+3 "Analysis" page=Q5
+3 "Concentration" page=Q6
+3 "Classifications" page=Q7
+3 "RHA" page=Q8
+3 Selection of individual analyses from query result set=QAnChoice
+2 Working with bibliography database
+3 Results of query to bibliographic base=BiblRes
+3 Construction of query to a bibliographic database=Q9
+1 Processing and presentation of data
+2 Viewing of the initial data=RES0
+2 Recalculation of concentration=Res1
+2 Viewing of complete information on a sample=Res3
+2 Standard statistics=Stat1
+2 Correlation coefficients=R1
+2 Standard petrochemical coefficients=Koef1
+2 Distances between compositions=Distance
+2 Normative recalculations=Stalg
+2 Results of automatic classifications=Class
+2 Equations of polynomial regresses=Regres
+2 Diagrams
+3 Binary and ternary diagrams=XYdiag
+3 Diagrams window=Wdia
+3 Change of diagram axes properties=Ax
+3 Set up of diagram properties=Gropt
+3 Spider-diagrams=SPaid
+3 Specification of the normalized analysis for spider-diagrams=Devider
+3 Standard diagrams=STDIia
+3 Classification diagrams=Cldia1
+3 Window of results of automatic classification at the diagram=CLASSDia
+3 Diagrams of average analyses=Dias
+3 Grouping of the data=Group
+1 Printing and export of data and results
+2 Printing of tabulated forms=Pri1
+2 Report printing configuration dialog=Pri2
+2 Export of data to text file=Pri3
+2 Export of data to MS Excel=Pri4
+2 Printing of diagrams=Pri5
+2 Preview window for printing of diagrams=Grprev
+2 Export diagrams to metafile=Pri7
+2 Export diagrams to MS Excel=Pri8
+1 Creation of new data processing methods
+2 Creation of new diagrams
+3 Creation of diagrams=Diag1
+3 Creation of classification diagrams=Diag2
+2 Creation of new data recalculation methods
+3 Specification of formulas for calculation of standard coefficients=Stkoef
+3 Creation of algorithms for complex recalculations=Algo1
+1 Petrochemical methods building into PETROS 2
+2 Algorithms and the diagrams included in  PETROS-2=Stand1
+2 Standard diagrams
+3 TAS Diagram=_TAS
+3 Entropy and anentropy diagram=EnAn
+2 RHA method
+3 Principles of RHA method=RHA1
+3 Rank formulas=RHA3
+3 Information entropy and anentropy=RHA4
+3 Opportunities represented by RHA method for work of geologists=RHA2
+3 REnAn table=RHABr
+3 Generalized rank formula (GR)=ORF
+3 Rank formulas with symbols marked by color=ColorRHA
+3 Diversity of compositions and representativety of retrieval=Var
+3 “Novelty” of retrieval=Novel
+1 License and registration of the program
+2 Types of licenses=LicType
+2 License agreement=Lic
+2 Registration of the program=Registr

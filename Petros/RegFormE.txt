@@ -1,0 +1,10 @@
+PETROS 2 REGISTRATION FORM
+
+Country:      __________________
+City:         __________________
+Organization: __________________
+Name:         __________________
+E-mail:       __________________
+ProgramID     __________________
+
+" I accept PETROS 2 lecense agreement"

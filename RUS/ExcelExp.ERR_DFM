@@ -1,0 +1,102 @@
+Untranslated =  218 
+object ExcF: TExcF
+Top =  227 
+BorderIcons =  [biSystemMenu] 
+BorderStyle =  bsDialog 
+Caption =  'Экспорт в MS EXCEL' 
+ClientHeight =  166 
+ClientWidth =  176 
+Color =  clBtnFace 
+Font.Charset =  DEFAULT_CHARSET 
+Font.Color =  clWindowText 
+Font.Height =  -11 
+Font.Name =  'MS Sans Serif' 
+Font.Style =  [] 
+OldCreateOrder =  False 
+OnCreate =  FormCreate 
+PixelsPerInch =  96 
+TextHeight =  13 
+object BitBtn1: TBitBtn
+Left =  8 
+Top =  136 
+Width =  75 
+Height =  25 
+TabOrder =  0 
+Kind =  bkOK 
+end
+object BitBtn2: TBitBtn
+Left =  96 
+Top =  136 
+Width =  75 
+Height =  25 
+TabOrder =  1 
+Kind =  bkCancel 
+end
+object GroupBox1: TGroupBox
+Left =  4 
+Top =  8 
+Width =  169 
+Height =  85 
+Caption =  'Левый-верхний угол таблицы' 
+TabOrder =  2 
+object Label1: TLabel
+Left =  8 
+Top =  28 
+Width =  35 
+Height =  13 
+Caption =  'Колонка' 
+end
+object Label2: TLabel
+Left =  8 
+Top =  60 
+Width =  22 
+Height =  13 
+Caption =  'Строка' 
+end
+object NumInp1: TNumInp
+Left =  64 
+Top =  20 
+Width =  45 
+Height =  21 
+Datatype =  dtInteger 
+Decimals =  2 
+Digits =  12 
+Max =  32000 
+Min =  1 
+TabOrder =  0 
+Value =  1 
+Validate =  True 
+end
+object NumInp2: TNumInp
+Left =  64 
+Top =  52 
+Width =  45 
+Height =  21 
+Datatype =  dtInteger 
+Decimals =  2 
+Digits =  12 
+Max =  32000 
+Min =  1 
+TabOrder =  1 
+Value =  1 
+Validate =  True 
+end
+end
+object CheckBox1: TCheckBox
+Left =  8 
+Top =  104 
+Width =  81 
+Height =  17 
+Caption =  'Новая таблица' 
+Checked =  True 
+State =  cbChecked 
+TabOrder =  3 
+end
+object ExcApp: TExcelApplication
+AutoConnect =  False 
+ConnectKind =  ckRunningOrNew 
+AutoQuit =  False 
+Left =  132 
+Top =  96 
+end
+end

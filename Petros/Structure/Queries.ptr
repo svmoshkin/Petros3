@@ -1,0 +1,45 @@
+7
+dac
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."Rock" IN (2))
+) 
+ORDER BY rhadata."Sample",rhadata."Descript"
+East
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."Region" IN (3))
+) 
+ORDER BY rhadata."Sample",rhadata."Descript"
+Vuorio
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."Region" IN (4))
+) 
+ORDER BY rhadata."Sample",rhadata."Descript"
+South
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."Region" IN (5))
+) 
+ORDER BY rhadata."Sample",rhadata."Descript"
+Sortavalites
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 416)
+) 
+ORDER BY rhadata."Sample",rhadata."Descript"
+Test Hu
+6
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" IN (416))
+)AND(
+(rhadata."Region" IN (2))
+) 
+ORDER BY rhadata."Sample",rhadata."Descript"
+tt
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 431)
+) 
+ORDER BY rhadata."Sample",rhadata."Descript"

@@ -1,0 +1,1562 @@
+251
+1065 Ле Метр Относит составы
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3741)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1065 Ле Mетр ср сост МАСС % испр
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3578)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+950 Границы поля EnAn
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3228)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1065 относит анализы
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3564)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1290т10  дунит+долерит
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2682)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1290т15 пироксенит + долерит
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2684)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1290т21 смеш пироксенит +диорит
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3821)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1290т1 смеш диорит+гранит
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3823)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1290т23 смеш долерит+диорит
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3825)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1250 смеш габбро+пироксен
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3636)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1250 смешение габбро+пироксенит
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3166)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1250 смеш габбро+пироксен
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3636)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+Н=,400
+4
+Select * From RHADATA rhadata Where (
+(rhadata.H >= 0.4) AND (rhadata.H <= 0.402)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+950 Границы поля EnAn
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3228)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+Н=627
+4
+Select * From RHADATA rhadata Where (
+(rhadata.H >= 0.6267) AND (rhadata.H <= 0.6272)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2067т1 тело человека
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3911)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+анэнтр
+4
+Select * From RHADATA rhadata Where (
+(rhadata.AN >= 0.28) AND (rhadata.AN <= 0.285)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+Запрос168
+4
+Select * From RHADATA rhadata Where (
+(rhadata.H >= 0.5) AND (rhadata.H <= 0.505)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2078т7 теллур ОСЧ
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3933)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2045т2 граниты Тервус
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3934)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+919 масс Кузнеченский
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2963)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+919 масс Лазурный
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2964)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+919 масс Оя-ярвинский
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2968)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+919 масс Островский
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2967)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+919 масс Маткасельск  бльшие эл-ты
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2965)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+919 масс Бородин большие эл-ты
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2960)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+919 масс Заветнинский
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2962)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1292т27 граниты палингенно-метасоматич
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2701)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1292т27 граниты интрузивно-анатектич
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2700)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2082т5.12 1-6 турмалин флюор-хрустал подформ
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3942)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2082т5.12 7-11 турмал топаз-бериллов ряд
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3943)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2082т5.12 12-17 турмал суб РМ
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3944)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2082т5.12 18-30 турмалин  суб РМ подф
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3945)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2082т1т15 31-37 турмалин Ц  Памир
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3946)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2082т5.12 38-45 турмалин Ю-З Памир
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3947)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2082т5.12 46- 49    турмалин     Параиба и др
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3948)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2082т5.12  50-52 турмал дравиты РМ-РЗ форм
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3949)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2082т5.12 53-62 турмал редкомет форм
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3950)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2082т5.12 63-66 турмал слюдон ф-ция
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3951)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2082т5.12 турмалин разн м-ний
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3966)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2083т31 почвы разн
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3954)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2085т  песчаники недестр и деструктурир
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3958)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2089т1т2т3
+11
+Select * From RHADATA rhadata Where (
+ RHADATA.ArrId in (select MainRHA.ID from MAINRHA MAINRHA
+ where  (MAINRHA.ArrayName LIKE '%2089т1%'))
+)OR(
+ RHADATA.ArrId in (select MainRHA.ID from MAINRHA MAINRHA
+ where  (MAINRHA.ArrayName LIKE '%2089т2%'))
+)OR(
+ RHADATA.ArrId in (select MainRHA.ID from MAINRHA MAINRHA
+ where  (MAINRHA.ArrayName LIKE '%2089т3%'))
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+Запрос137
+5
+Select * From RHADATA rhadata Where (
+ RHADATA.ArrId in (select MainRHA.ID from MAINRHA MAINRHA
+ where  (MAINRHA.ArrayName LIKE '%сидеромел%'))
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2089т5т7
+8
+Select * From RHADATA rhadata Where (
+ RHADATA.ArrId in (select MainRHA.ID from MAINRHA MAINRHA
+ where  (MAINRHA.ArrayName LIKE '%2089т5%'))
+)OR(
+ RHADATA.ArrId in (select MainRHA.ID from MAINRHA MAINRHA
+ where  (MAINRHA.ArrayName LIKE '%2089т7%'))
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2090т1 границы поля на 30
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3978)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1315т1изменения риолит-порфира
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2737)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1316т1 грейзены
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2738)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1317 воды морские минерализ
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2739)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1316т1 грейзены
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2738)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1318т2 слюды
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2740)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1316т1 грейзены  20 Эл
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3979)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1189 биотиты гранаты на 10
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2599)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1037т22 кластеры сост гп
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2268)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+Запрос216
+8
+Select * From RHADATA rhadata Where (
+ RHADATA.ArrId in (select MainRHA.ID from MAINRHA MAINRHA
+ where  (MAINRHA.ArrayName LIKE '%2091т1%'))
+)OR(
+ RHADATA.ArrId in (select MainRHA.ID from MAINRHA MAINRHA
+ where  (MAINRHA.ArrayName LIKE '%2091т2%'))
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+835т18 выветривание гранитов
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2856)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1296т17т48т59 кварц
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2718)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2078т7 теллур ОСЧ
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3933)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+930т4 шеелит с  мод  Ат%
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3563)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1 Рефрен
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4044)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2102т2  мал + Р+К
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4090)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2102т2 мал  с К и Р
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4091)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2102т2 Мал эл   при   мал   Р
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4092)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2102т2 мал эл при ВЫС  Р
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4093)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2102т2  мал Р   мал на 20 эл
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4094)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2102т2 БОЛ   Р  на 20 эл
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4095)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1065 т1 Ср! по Ле Метру
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4102)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1стр302_1_гп ср! по Ноккольдс
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4103)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1стр296_ гп ср! по Дэли
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4105)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1стр290_ гп ср! по Соловьеву
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4104)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+Средние все
+14
+Select * From RHADATA rhadata Where (
+ RHADATA.ArrId in (select MainRHA.ID from MAINRHA MAINRHA
+ where  (MAINRHA.ArrayName LIKE '%по Соловьеву%'))
+)OR(
+ RHADATA.ArrId in (select MainRHA.ID from MAINRHA MAINRHA
+ where  (MAINRHA.ArrayName LIKE '%по Ноккольдс%'))
+)OR(
+ RHADATA.ArrId in (select MainRHA.ID from MAINRHA MAINRHA
+ where  (MAINRHA.ArrayName LIKE '%по Дэли%'))
+)OR(
+ RHADATA.ArrId in (select MainRHA.ID from MAINRHA MAINRHA
+ where  (MAINRHA.ArrayName LIKE '%по Ле Метру%'))
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2082т5.12 турмалин разн м-ний
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3966)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+178гл3т1 Земная Кора
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4106)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+178гл3т3 граниты типы
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4107)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+Земн кора и граниты
+8
+Select * From RHADATA rhadata Where (
+ RHADATA.ArrId in (select MainRHA.ID from MAINRHA MAINRHA
+ where  (MAINRHA.ArrayName LIKE '%178гл3т1%'))
+)OR(
+ RHADATA.ArrId in (select MainRHA.ID from MAINRHA MAINRHA
+ where  (MAINRHA.ArrayName LIKE '%178гл3т3%'))
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1037т22 кластеры сост гп
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2268)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2099т1_dacite_Awulale Mount  W Tianshan
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4080)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2100т1_volcanite_Qinlig Moutains China
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4081)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2101т1_adakite_Junggar
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4082)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2102t2_boninite-like   greenstone belt_  W  Greenland
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4083)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2102t3_metavolcanite_Isua greenstone belt W Greenland
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4084)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2106т1_Island-arc basaltic andesite and andesite
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4087)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2109т1т2_трахидацит-Oliv-латит
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4108)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+211тА3а плагиоклаз из баз ЯДРО
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 0)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2111тА3в плагиокл из баз КРАЙ
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4110)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2111тА4в Оливин из баз ЯДРО
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4111)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2111тА4а оливин из баз КРАЙ
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4112)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2111тА5 клинопир из баз Ядро
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4113)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2111тА5 клинопир из баз КРАЙ
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4114)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2111тА7 стекла вкл в Plag
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4115)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2111тА8 стекла в базальте Ascension Island
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4116)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+сумма масс КК
+8
+Select * From RHADATA rhadata Where (
+ RHADATA.ArrId in (select MainRHA.ID from MAINRHA MAINRHA
+ where  (MAINRHA.ArrayName LIKE '%835т18%'))
+)OR(
+ RHADATA.ArrId in (select MainRHA.ID from MAINRHA MAINRHA
+ where  (MAINRHA.ArrayName LIKE '%2094т2%'))
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+аналог стекла
+4
+Select * From RHADATA rhadata Where (
+(rhadata.R >= '  8 14 12 26 20 13 22  1') AND (rhadata.R <= '  8 14 12 26 20 13 22 54')
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+аналог ст в олив
+4
+Select * From RHADATA rhadata Where (
+(rhadata.R >= '  8 14 13 20 12 26 11  1') AND (rhadata.R <= '  8 14 13 20 12 26 11 54')
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2111тА7тА8
+8
+Select * From RHADATA rhadata Where (
+ RHADATA.ArrId in (select MainRHA.ID from MAINRHA MAINRHA
+ where  (MAINRHA.ArrayName LIKE '%2111тА7%'))
+)OR(
+ RHADATA.ArrId in (select MainRHA.ID from MAINRHA MAINRHA
+ where  (MAINRHA.ArrayName LIKE '%2111тА8%'))
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+Стекло
+4
+Select * From RHADATA rhadata Where (
+(rhadata.DESCRIPT LIKE '%стекл%')
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1157т5 стекло с выс сод. K2O вкл в плаг
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2559)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1499т6 стекла в нефелине из ийолита
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3579)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2111т3.1  базальты стекла MAR СОХ
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4120)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2111 сравнение  МАЛ
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4122)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2111  для сравн БОЛ
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4121)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2111тА8   стекла в баз с малыми
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4123)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2111тА8  стекла в баз БОЛ
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4124)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2111тА8  Стекла в баз МАЛ
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4125)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1101т2 стекла включ в мин в меймечите
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2450)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1431т4 стекла фоидитов
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3258)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2018т1 габбронорит масс Надежда
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4126)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2018т3 нориты микрогаббронориты  Надежда
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4127)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2018т4 габбронориты анортозиты
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4128)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2107т1 базальты Этендека Намибия
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4109)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2018т1 габбронор на 8 оруд
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4129)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+Вся БАЗА
+2
+Select * From RHADATA rhadata 
+ORDER BY rhadata.ArrNum, rhadata.num
+2019т1 толеит баз  Вост-Тихок подн
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4130)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1037т21 земная кора Исландии
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2267)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1037т24 магм тренд с H2O
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3200)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1037т24 тренд кумул с Н2О
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3201)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1043 раздел на сил-карб
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2298)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1155т2 гранитоиды
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2551)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+Запрос157
+4
+Select * From RHADATA rhadata Where (
+(rhadata.DESCRIPT LIKE '%Киргиз%')
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1467с нац сост_СССР
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4136)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1467с нац состав Россия
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4133)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1467с нац состав Туркмения
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4135)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1467с нац состав Украина
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4132)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1467с нац сост_Молдавия
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4134)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1467с  нац состав Латвия
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4131)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1467с_нац сост_Узбекистан
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4139)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1410т8 растворим KNO3
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3368)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+930т4 шеелит ген ряд
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3562)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+148с160 тело человека
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2743)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1410 Модель H2O+KNO3
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4140)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1042т34-1 габбро-гран Танюнерский масс
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3113)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+песок
+4
+Select * From RHADATA rhadata Where (
+(rhadata.DESCRIPT LIKE '%песок%')
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1467с_нац сост_Азерб
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4137)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1467с_нац сост_Эстония
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4138)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1042т34-1 габбро+гранит смешение
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4141)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+Запрос172
+4
+Select * From RHADATA rhadata Where (
+(rhadata.DESCRIPT LIKE '%скапол%')
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+964 скаполит на 10
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3036)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1002т1б карбнатиты доломит только
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3476)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1002т1а карбонатиты кальцит только
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3475)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2020т1 габбронориты Сев Карелия
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4143)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2111тА4а оливин из баз КРАЙ
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4112)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2111тА4в Оливин из баз ЯДРО
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4111)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2111тА5 клинопир из баз КРАЙ
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4114)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2111тА5 клинопир из баз Ядро
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4113)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2111т3.1  базальты стекла MAR СОХ
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4120)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2111А3а  plagl_ядро_s. plag.
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4144)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2111Ат3в плагиоклаз из баз край
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4145)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+9т1 ред мет, благор мет в Fe-Mn корках
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4146)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+9т2 интермет соед в FeMn корках
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4147)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+9т1т2  
+8
+Select * From RHADATA rhadata Where (
+ RHADATA.ArrId in (select MainRHA.ID from MAINRHA MAINRHA
+ where  (MAINRHA.ArrayName LIKE '%9т2 интер%'))
+)OR(
+ RHADATA.ArrId in (select MainRHA.ID from MAINRHA MAINRHA
+ where  (MAINRHA.ArrayName LIKE '%9т1 ред мет%'))
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+10т1-1? (все)  Шилосский структура
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4150)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+10т1 м ВСЕ Шилосская стр Б/ВОДН
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4152)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+10т2_Толеитовая сер
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4154)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+10т3 туфы   Шилосск струк
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4155)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+10т4_песчаники-сланцы
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4156)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+10т5  габброиды
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4157)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+10т6 диорит Qu  Шилосск стр
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4158)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+10т7__тоналит_массив_Шилос
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4159)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+10т8__Pl-гранит_массив_Шилос
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4160)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+10т9-__ИЗМ кв диорит  Pl граниты_массив_Шилос
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4161)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+10т10__метабазальт_ятулий
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4162)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2112т1 чарнокитоиды
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4163)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2112т3 гран-биотитов гп
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4164)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2112т5_ гнейс биотитов_
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4165)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2112т6 эклогитоиды амфиболов
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4166)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2112т4_ультрабазиты
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4167)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2112т7 минералы эклогитоида гигзрн
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4168)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2112т7 минералы эклогитоида гигзерн На7эл
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4169)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2112т10 гнейсы амфиболиты
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4170)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2112т12  плагиогнейсы
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4171)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2113т1 скарны Sn Таиланд
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4172)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+OMgSiAl
+4
+Select * From RHADATA rhadata Where (
+(rhadata.R >= '  8 12 14 13 10') AND (rhadata.R <= '  8 12 14 13 86')
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2005т39 метасоматит по магнез мраморам
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3619)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2112т13 эклогитоиды
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4175)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2502т1 Воды глуб Тырныауз
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4178)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1517т1 метаморфиты  Становой хр 1-4 сер
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4179)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1517т1 метаморф сер 1
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4180)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1517т1 метамрф сер 2
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4181)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1517т1 метаморф сер 3
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4182)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1517т1 метаморф сер 4
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4183)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1517т1 метаморф сер 1 на 40 эл
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4184)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1517т1 метаморф сер 2 на 40 эл
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4185)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1517т1 метаморф сер 3 на 40 эл
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4186)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1517т1 метаморф сер 4 на 40 эл
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4187)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1517т1 метаморфиты Становой хр. малые на 30
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4188)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1517 метаморф малые отбор на 25 эл
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4189)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+Все данные
+2
+Select * From RHADATA rhadata 
+ORDER BY rhadata.ArrNum, rhadata.num
+2115т1 турмалин    для КХФ на 8 эл
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4190)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2115т1 турмалин для Крист-Хим-Ф   На 10эл
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 0)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2503т1 воды грязевых вулканов на 8 эл
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4191)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2502 и 2503
+8
+Select * From RHADATA rhadata Where (
+ RHADATA.ArrId in (select MainRHA.ID from MAINRHA MAINRHA
+ where  (MAINRHA.ArrayName LIKE '%2502%'))
+)OR(
+ RHADATA.ArrId in (select MainRHA.ID from MAINRHA MAINRHA
+ where  (MAINRHA.ArrayName LIKE '%2503%'))
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2503т1 воды гряз вулк Прикуринск обл 8 эл
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 0)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2503т1  воды гряз вулк Шемахино-Кобыстанс обл
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 0)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2503т1 воды гряз вулк Зап Туркменист на 8
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 0)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2004т1 воды углекислые Кавказ
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4193)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2503т1 воды углек из штолен
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4194)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2502т1 воды глуб Тырныауз на 8 эл
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4192)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2502-3-4
+11
+Select * From RHADATA rhadata Where (
+ RHADATA.ArrId in (select MainRHA.ID from MAINRHA MAINRHA
+ where  (MAINRHA.ArrayName LIKE '%2502т1%'))
+)OR(
+ RHADATA.ArrId in (select MainRHA.ID from MAINRHA MAINRHA
+ where  (MAINRHA.ArrayName LIKE '%2503т1%'))
+)OR(
+ RHADATA.ArrId in (select MainRHA.ID from MAINRHA MAINRHA
+ where  (MAINRHA.ArrayName LIKE '%2504т1%'))
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1065 изв гп  Ле Метр АТ%
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3822)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+204т1 чарнокиты
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4198)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1059т3e) базальт пикр и
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2340)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1059т3e) базальт пикр и
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2340)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1065 изв гп  Ле Метр АТ%
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3822)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2116т1  разные исходные для чарнокитов
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4207)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2116т9 чарнокитизация серии
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4208)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+129т24   гранит+дунит
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4214)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+ 2115 Турма КХФ на 8
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4215)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+824 каол-ция
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2841)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+824 смешение гранит-каолин
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3256)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+824т1 смеш гран+ каолин
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3215)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+44т7.10 денежные доходы
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3698)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+44т9.3  Заболеваемость насел России
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3699)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1250_1-ФАЗА
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3126)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1250_2-ФАЗА
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3127)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1250_3-ФАЗА
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3128)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1250_ДАЙКИ
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3129)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1522т1 метасоматиты рудного узла
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4221)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1536т1.23 Материнская смертность до 2000г
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4239)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1537т1 Материнская смертность -2
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4238)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2079 числовые ряды
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3939)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+Cl
+4
+Select * From RHADATA rhadata Where (
+((rhadata.A17>=0)AND(rhadata.A17<=1))
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1538т1 вулканиты Курильск гряды
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4240)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1539т1 онгониты
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4241)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1521т4 гранаты  ядро-край
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4242)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1521т1 гранаты ядро-край из  метапелитов
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4243)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1541т1а  гранты  центр-край
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4244)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1541т5b слюды из метапелитов на 7 эл
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4245)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1541т5b слюды из метапелитов на 10 эл
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4246)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2054т8 Na K серициты
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3870)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2503т1 воды гряз влк Шемахино-Кобыстанская обл
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4248)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2503т1 воды гряз влк Прикуринская обл
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4247)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+2503т1 воды грез влк Зап. Туркмения
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4249)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+Запрос250
+4
+Select * From RHADATA rhadata Where (
+(rhadata.DESCRIPT LIKE '%Муонг%')
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1542 Экспер прокаливание
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4250)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1079т1 эвдиалиты
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 2185)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1543т3 биотиты монцониты
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4252)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1543 биотит монцон МАЛ эл
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 4251)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+тектит
+4
+Select * From RHADATA rhadata Where (
+(rhadata.DESCRIPT LIKE '%тектит%')
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+метеориты
+4
+Select * From RHADATA rhadata Where (
+(rhadata.DESCRIPT LIKE '%метеори%')
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+метеорит тектит
+6
+Select * From RHADATA rhadata Where (
+(rhadata.DESCRIPT LIKE '%метеори%')
+)OR(
+(rhadata.DESCRIPT LIKE '%тектит%')
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1037т24 магм тренд с H2O
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3200)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+1037т24 тренд кумул с Н2О
+4
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId = 3201)
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+Запрос260
+6
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId IN (2387))
+)OR(
+(rhadata.ArrId IN (705))
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+Запрос261
+6
+Select * From RHADATA rhadata Where (
+(rhadata.ArrId IN (2387))
+)OR(
+(rhadata.ArrId IN (714))
+) 
+ORDER BY rhadata.ArrNum, rhadata.num
+Query244
+4
+Select  * From rhadata Where (
+(rhadata.R >= '    8   14   13   19') and (rhadata.R <= '    8   14   13   19*') 
+) 
+ORDER BY rhadata.Num
+Query245
+4
+Select * From rhadata Where (
+(rhadata.R >= '    8   14   13   19    1') AND (rhadata.R <= '    8   14   13   19    1*')
+) 
+ORDER BY rhadata.Num
+Query246
+4
+Select * From rhadata Where (
+(AnId in (236642,236666))
+) 
+ORDER BY rhadata.Num
+Query247
+4
+Select * From rhadata Where (
+(AnId in (236640,236641))
+) 
+ORDER BY rhadata.Num
+1 Рефрен
+4
+Select * From rhadata Where (
+(rhadata.ArrId = 4044)
+) 
+ORDER BY rhadata.Num
+818т1 гп FeSi
+4
+Select * From rhadata Where (
+(rhadata.ArrId = 2829)
+) 
+ORDER BY rhadata.Num
+679т14 Земля №№ в тексте ошиб
+4
+Select * From rhadata Where (
+(rhadata.ArrId = 2815)
+) 
+ORDER BY rhadata.Num

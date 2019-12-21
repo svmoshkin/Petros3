@@ -1,0 +1,17 @@
+[OPTIONS]
+HLP=Context.HLP
+TITLE=Context
+CONTENTS=IDC_DEFAULT_TOPIC
+REPORT=YES
+
+
+[FILES]
+Context.RTF
+
+
+[MAP]
+#include <Context.HH>
+
+
+[BAGGAGE]
+DIALOG.CID

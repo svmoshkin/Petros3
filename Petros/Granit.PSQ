@@ -1,0 +1,4 @@
+Granit
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."DESCRIPT" LIKE "%гранит %")
+) 

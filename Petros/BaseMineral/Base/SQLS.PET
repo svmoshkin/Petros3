@@ -1,0 +1,5 @@
+NoName
+3
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" IN (330))
+) 

@@ -1,0 +1,100 @@
+        PETROS 2
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+       LICENSE AGREEMENT
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The present license agreement ("agreement") is a legal
+ document concluded between you (physical or juridical 
+entities) and the developer of PETROS program complex
+ Moshkin Sergey Vladimirovich (later referred to as 
+"Developer") concerning the use of specified software 
+including software, written on the appropriate carriers,
+ any hard copies and any "built - in" or "electronic" 
+documentation. To whom it may concern "software" also 
+updating and addition to the software initially given by 
+the Developer. 
+
+Installing, copying, loading, providing access or 
+otherwise use the specified software, you thus accept 
+conditions of the present agreement. If you disagree 
+with conditions of this license agreement, do not install 
+and do not use this software. 
+
+PROGRAM LICENSE 
+The software is protected by laws and the international 
+agreements on copyrights, and also other laws and the 
+contracts regulating attitudes of intellectual property. 
+The given software is licensed, instead of sold. 
+
+CONTENT OF LICENCE
+The present license agreement gives you the following 
+rights:
+
+·	Direct use. It is authorized to install, use, 
+        display, start or a different way to work with 
+        one copy of given software on any computer, a 
+        workstation, the terminal or other digital 
+        electronic device (after referred to as "computer").
+
+·	Storage and use in a network. Also it is authorized 
+        to store or install a copy of the program on the 
+        storage device (for example, on a network server), 
+        intended and used only to run the program on your 
+        other computers within an internal network; however, 
+        you must acquire and register separate license for 
+        each computer on which the program is installed or 
+        run from the storage device. A license for the program 
+        may not be shared and does not suppose its concurrently 
+        use on different computers.
+
+·	License package. If given packing represents a license 
+        package, you have the right to work with additional 
+        software copies whose number is specified in the column 
+        "number of the licensed copies". Thus, you also have the 
+        right to create an appropriate number of secondary copies 
+        for use on a portable computer as it is described above.
+
+·	Interdiction on cracking of technology, de-compiling and 
+        dissembling. It is forbidden to crack technology, to 
+        de-compile or dissemble the software except for a case and 
+        only in that degree when such actions are obviously allowed 
+        by the current legislation, despite of the presence of the 
+        given restriction in the license agreement.
+
+·	Division of components. The program is licensed as a 
+        uniform product. It is forbidden to separate component parts 
+        of the program for use on several computers.
+
+·	Temporal use. It is forbidden to give the program for 
+        temporal use.
+
+COPYRIGHT
+All property rights and copyrights to the program and the contents 
+of both printed and electronic materials and any copies of the 
+program belong to the Developer.
+
+BACKUP COPY. 
+After installation of a software copy, the license for which use 
+is given by the license agreement, authorized to keep initial 
+carriers, on which the Developer has distributed this software, 
+extremely for the task to make archive or preservations of a 
+backup copy. It is authorized to make one copy of the software 
+only for the purpose of reserve copying or to make archive, if 
+initial carriers are necessary for the software use on a computer. 
+It is forbidden to create copies of the software and the 
+accompanying printed documentation using ways different from 
+those described in the present license agreement.
+
+PROGRAM COMPLEX PETROS IS DISTRIBUTED BY THE PRINCIPLE "AS IS". 
+THUS IT DOES NOT PROVIDE ANY GUARANTEES, OBVIOUS OR MEANT. YOU 
+USE IT ON YOUR RISK. DEVELOPER IS NOT RESPONSIBLE FOR THE LOSS 
+OF DATA, DAMAGE, LOSS OF THE PROFIT OR ANY OTHER KINDS OF LOSSES 
+CAUSED BY THE USE (CORRECT OR WRONG) OF THIS PROGRAM.
+
+  If you disagree with conditions of a given license you have to 
+  remove files PETROS from the information storage devices and 
+  refuse to use PETROS.
+
+Thank You for use of PETROS 2!
+S. Moshkin.

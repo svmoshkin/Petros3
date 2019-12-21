@@ -1,0 +1,947 @@
+******************************************
+*                  Tasks                 *
+Table of projects
+******************************************
+TABLE Tasks {
+   ID                : AutoInc               NULL     <PK>
+   Name              : String[80]            NOT NULL       Project's name 
+   DataDes           : String[255]           NOT NULL       Project's description 
+   Alias             : String[12]            NOT NULL       BDE alias for project
+   PrId              : String[12]            NULL    
+   CopyOf            : String[12]            NULL    
+   HaveSQL           : Boolean               NULL    
+}
+
+INDEXES:
+   ID
+      [Primary Key,Unique,Case Sensitive]
+   Name
+      [Case Sensitive]
+   Alias
+
+******************************************
+*                 FPoints                *
+******************************************
+TABLE FPoints {
+   ID                : AutoInc               NULL     <PK>
+   FieldId           : Integer               NULL    
+   Cod               : Integer               NULL    
+   TypCod            : Integer               NULL    
+   X                 : Float                 NULL    
+   Y                 : Float                 NULL    
+}
+
+INDEXES:
+   ID
+      [Primary Key,Unique,Case Sensitive]
+   FieldId
+      [Case Sensitive]
+
+RELATIONS
+
+   TABLE IS DEPENDANT
+      Relation name     =DBInfoForm
+      Master table name =Fields.DB
+      Modify state      =CASCADE
+      Delete state      =RESTRICT
+        Relation fields
+          FieldId=>Fields.ID
+
+
+******************************************
+*                 LPoints                *
+******************************************
+TABLE LPoints {
+   ID                : AutoInc               NULL     <PK>
+   LineId            : Integer               NULL    
+   Cod               : Integer               NULL    
+   TypCod            : Integer               NULL    
+   X                 : Float                 NULL    
+   Y                 : Float                 NULL    
+}
+
+INDEXES:
+   ID
+      [Primary Key,Unique,Case Sensitive]
+   LineId
+      [Case Sensitive]
+
+RELATIONS
+
+   TABLE IS DEPENDANT
+      Relation name     =DBInfoForm
+      Master table name =Lines.DB
+      Modify state      =CASCADE
+      Delete state      =RESTRICT
+        Relation fields
+          LineId=>Lines.ID
+
+
+******************************************
+*                 Points                 *
+******************************************
+TABLE Points {
+   ID                : AutoInc               NULL     <PK>
+   DiagId            : Integer               NULL    
+   Cod               : Integer               NULL    
+   TypCod            : Integer               NULL    
+   X                 : Float                 NULL    
+   Y                 : Float                 NULL    
+}
+
+INDEXES:
+   ID
+      [Primary Key,Unique,Case Sensitive]
+   DiagId
+      [Case Sensitive]
+
+RELATIONS
+
+   TABLE IS DEPENDANT
+      Relation name     =DBInfoForm
+      Master table name =Diagrams.DB
+      Modify state      =CASCADE
+      Delete state      =RESTRICT
+        Relation fields
+          DiagId=>Diagrams.ID
+
+
+******************************************
+*                Diagrams                *
+******************************************
+TABLE Diagrams {
+   ID                : AutoInc               NULL     <PK>
+   Name              : String[80]            NULL    
+   Cod               : Integer               NULL    
+   ShowTitle         : Boolean               NULL    
+   ShowNames         : Boolean               NULL    
+   ShowGrid          : Boolean               NULL    
+   Classification    : Boolean               NULL    
+   Trio              : Boolean               NULL    
+   Norma             : Float                 NULL    
+   XCaption          : String[60]            NULL    
+   XFormula          : String[255]           NULL    
+   XMin              : Float                 NULL    
+   XMax              : Float                 NULL    
+   XLogor            : Boolean               NULL    
+   XAW               : Boolean               NULL    
+   XMols             : Boolean               NULL    
+   YCaption          : String[60]            NULL    
+   YFormula          : String[255]           NULL    
+   YMin              : Float                 NULL    
+   YMax              : Float                 NULL    
+   YLogor            : Boolean               NULL    
+   YAW               : Boolean               NULL    
+   YMols             : Boolean               NULL    
+   ZCaption          : String[60]            NULL    
+   ZFormula          : String[255]           NULL    
+   ZMin              : Float                 NULL    
+   ZMax              : Float                 NULL    
+   ZLogor            : Boolean               NULL    
+   ZAW               : Boolean               NULL    
+   ZMols             : Boolean               NULL    
+   LogX              : Boolean               NULL    
+   LogY              : Boolean               NULL    
+   Proc100X          : Boolean               NULL    
+   Proc100Y          : Boolean               NULL    
+   Proc100Z          : Boolean               NULL    
+}
+
+INDEXES:
+   ID
+      [Primary Key,Unique,Case Sensitive]
+   Name
+
+RELATIONS
+   TABLE IS MASTER
+      Relation name        =DBInfoForm
+      Dependant table name =Points.DB
+      Modify state         =CASCADE
+      Delete state         =RESTRICT
+        Relation fields
+          ID=>Points.DiagId
+
+      Relation name        =DBInfoForm
+      Dependant table name =Intervals.DB
+      Modify state         =CASCADE
+      Delete state         =RESTRICT
+        Relation fields
+          ID=>Intervals.DiagId
+
+      Relation name        =DBInfoForm
+      Dependant table name =Lines.DB
+      Modify state         =CASCADE
+      Delete state         =RESTRICT
+        Relation fields
+          ID=>Lines.DiagID
+
+      Relation name        =DBInfoForm
+      Dependant table name =Fields.DB
+      Modify state         =CASCADE
+      Delete state         =RESTRICT
+        Relation fields
+          ID=>Fields.DiagrID
+
+
+******************************************
+*                 Tables                 *
+******************************************
+TABLE Tables {
+   Order             : SmallInt              NOT NULL <PK>
+   Name              : String[10]            NOT NULL
+   Extention         : String[3]             NULL    
+}
+
+INDEXES:
+   Order
+      [Primary Key,Unique,Case Sensitive]
+
+******************************************
+*                  Lists                 *
+******************************************
+TABLE Lists {
+   ID                : AutoInc               NULL     <PK>
+   Name              : String[20]            NULL    
+   Comment           : String[80]            NULL    
+}
+
+INDEXES:
+   ID
+      [Primary Key,Unique,Case Sensitive]
+
+RELATIONS
+   TABLE IS MASTER
+      Relation name        =DBInfoForm
+      Dependant table name =ListData.DB
+      Modify state         =CASCADE
+      Delete state         =RESTRICT
+        Relation fields
+          ID=>ListData.List
+
+
+******************************************
+*                Intervals               *
+******************************************
+TABLE Intervals {
+   ID                : AutoInc               NULL     <PK>
+   DiagId            : Integer               NULL    
+   Cod               : Integer               NULL    
+   TypCod            : Integer               NULL    
+   X                 : Float                 NULL    
+   Y                 : Float                 NULL    
+   Name              : String[40]            NULL    
+   ClassId           : String[12]            NULL    
+}
+
+INDEXES:
+   ID
+      [Primary Key,Unique,Case Sensitive]
+   DiagId
+      [Case Sensitive]
+
+RELATIONS
+
+   TABLE IS DEPENDANT
+      Relation name     =DBInfoForm
+      Master table name =Diagrams.DB
+      Modify state      =CASCADE
+      Delete state      =RESTRICT
+        Relation fields
+          DiagId=>Diagrams.ID
+
+
+******************************************
+*                 Source                 *
+******************************************
+TABLE Source {
+   Id                : AutoInc               NULL     <PK>
+   Num               : SmallInt              NOT NULL
+   Author            : String[80]            NOT NULL
+   Title             : String[255]           NOT NULL
+   Bibl              : String[80]            NOT NULL
+}
+
+INDEXES:
+   Id
+      [Primary Key,Unique,Case Sensitive]
+   Num
+      [Unique]
+   Author
+
+RELATIONS
+   TABLE IS MASTER
+      Relation name        =DBInfoForm
+      Dependant table name =MainRHA.DB
+      Modify state         =RESTRICT
+      Delete state         =RESTRICT
+        Relation fields
+          Id=>MainRHA.Source
+
+
+******************************************
+*                  Lines                 *
+******************************************
+TABLE Lines {
+   ID                : AutoInc               NULL     <PK>
+   DiagID            : Integer               NULL    
+   Name1             : String[40]            NULL    
+   Cod               : SmallInt              NULL    
+   TypCod            : Integer               NULL    
+   NamePosX          : Float                 NULL    
+   NamePosY          : Float                 NULL    
+   Bez               : Boolean               NULL    
+   Width             : Integer               NULL    
+   PenStyle          : SmallInt              NULL    
+   ClassId           : String[12]            NULL    
+}
+
+INDEXES:
+   ID
+      [Primary Key,Unique,Case Sensitive]
+   DiagID
+      [Case Sensitive]
+
+RELATIONS
+   TABLE IS MASTER
+      Relation name        =DBInfoForm
+      Dependant table name =LPoints.DB
+      Modify state         =CASCADE
+      Delete state         =RESTRICT
+        Relation fields
+          ID=>LPoints.LineId
+
+
+   TABLE IS DEPENDANT
+      Relation name     =DBInfoForm
+      Master table name =Diagrams.DB
+      Modify state      =CASCADE
+      Delete state      =RESTRICT
+        Relation fields
+          DiagID=>Diagrams.ID
+
+
+******************************************
+*                 Fields                 *
+******************************************
+TABLE Fields {
+   ID                : AutoInc               NULL     <PK>
+   Name              : String[255]           NULL    
+   ClassID           : String[12]            NULL    
+   DiagrID           : Integer               NULL    
+   Bez               : Boolean               NULL    
+   Width             : Integer               NULL    
+   PenStyle          : SmallInt              NULL    
+   NamePosX          : Float                 NULL    
+   NamePosY          : Float                 NULL    
+   Cod               : SmallInt              NULL    
+   TypCod            : SmallInt              NULL    
+   Name1             : String[40]            NULL    
+}
+
+INDEXES:
+   ID
+      [Primary Key,Unique,Case Sensitive]
+   DiagrID
+      [Case Sensitive]
+
+RELATIONS
+   TABLE IS MASTER
+      Relation name        =DBInfoForm
+      Dependant table name =FPoints.DB
+      Modify state         =CASCADE
+      Delete state         =RESTRICT
+        Relation fields
+          ID=>FPoints.FieldId
+
+
+   TABLE IS DEPENDANT
+      Relation name     =DBInfoForm
+      Master table name =Diagrams.DB
+      Modify state      =CASCADE
+      Delete state      =RESTRICT
+        Relation fields
+          DiagrID=>Diagrams.ID
+
+
+******************************************
+*                ImpFields               *
+******************************************
+TABLE ImpFields {
+   Id                : AutoInc               NULL     <PK>
+   DName             : String[30]            NULL    
+   FName             : String[10]            NULL    
+   Size              : Integer               NULL    
+}
+
+INDEXES:
+   Id
+      [Primary Key,Unique,Case Sensitive]
+
+RELATIONS
+   TABLE IS MASTER
+      Relation name        =DBInfoForm
+      Dependant table name =Sinonims.DB
+      Modify state         =CASCADE
+      Delete state         =RESTRICT
+        Relation fields
+          Id=>Sinonims.FieldId
+
+      Relation name        =DBInfoForm
+      Dependant table name =Dictionar.DB
+      Modify state         =CASCADE
+      Delete state         =RESTRICT
+        Relation fields
+          Id=>Dictionar.FieldId
+
+
+******************************************
+*                  Rocks                 *
+******************************************
+TABLE Rocks {
+   Id                : AutoInc               NULL     <PK>
+   Rock              : String[20]            NULL    
+   Descript          : String[40]            NULL    
+}
+
+INDEXES:
+   Id
+      [Primary Key,Unique,Case Sensitive]
+   Rock
+      [Unique,Case Sensitive]
+
+RELATIONS
+   TABLE IS MASTER
+      Relation name        =DBInfoForm
+      Dependant table name =RHAData.DB
+      Modify state         =RESTRICT
+      Delete state         =RESTRICT
+        Relation fields
+          Id=>RHAData.Rock
+
+
+******************************************
+*                 RHAData                *
+******************************************
+TABLE RHAData {
+   AnId              : AutoInc               NULL     <PK>
+   ArrId             : Integer               NULL    
+   H                 : Float                 NULL    
+   A                 : Float                 NULL    
+   AN                : Float                 NULL    
+   R                 : String[200]           NULL    
+   Eq                : String[20]            NULL    
+   Descript          : String[100]           NOT NULL
+   N1                : Float                 NULL    
+   N2                : Float                 NULL    
+   N3                : Float                 NULL    
+   N4                : Float                 NULL    
+   N5                : Float                 NULL    
+   N6                : Float                 NULL    
+   N7                : Float                 NULL    
+   N8                : Float                 NULL    
+   N9                : Float                 NULL    
+   N10               : Float                 NULL    
+   N11               : Float                 NULL    
+   N12               : Float                 NULL    
+   N13               : Float                 NULL    
+   N14               : Float                 NULL    
+   N15               : Float                 NULL    
+   N16               : Float                 NULL    
+   N17               : Float                 NULL    
+   N18               : Float                 NULL    
+   N19               : Float                 NULL    
+   N20               : Float                 NULL    
+   N21               : Float                 NULL    
+   N22               : Float                 NULL    
+   N23               : Float                 NULL    
+   N24               : Float                 NULL    
+   N25               : Float                 NULL    
+   N26               : Float                 NULL    
+   N27               : Float                 NULL    
+   N28               : Float                 NULL    
+   N29               : Float                 NULL    
+   N30               : Float                 NULL    
+   N31               : Float                 NULL    
+   N32               : Float                 NULL    
+   N33               : Float                 NULL    
+   N34               : Float                 NULL    
+   N35               : Float                 NULL    
+   N36               : Float                 NULL    
+   N37               : Float                 NULL    
+   N38               : Float                 NULL    
+   N39               : Float                 NULL    
+   N40               : Float                 NULL    
+   N41               : Float                 NULL    
+   N42               : Float                 NULL    
+   N43               : Float                 NULL    
+   N44               : Float                 NULL    
+   N45               : Float                 NULL    
+   N46               : Float                 NULL    
+   N47               : Float                 NULL    
+   N48               : Float                 NULL    
+   N49               : Float                 NULL    
+   N50               : Float                 NULL    
+   A1                : Float                 NULL    
+   A2                : Float                 NULL    
+   A3                : Float                 NULL    
+   A4                : Float                 NULL    
+   A5                : Float                 NULL    
+   A6                : Float                 NULL    
+   A7                : Float                 NULL    
+   A8                : Float                 NULL    
+   A9                : Float                 NULL    
+   A10               : Float                 NULL    
+   A11               : Float                 NULL    
+   A12               : Float                 NULL    
+   A13               : Float                 NULL    
+   A14               : Float                 NULL    
+   A15               : Float                 NULL    
+   A16               : Float                 NULL    
+   A17               : Float                 NULL    
+   A18               : Float                 NULL    
+   A19               : Float                 NULL    
+   A20               : Float                 NULL    
+   A21               : Float                 NULL    
+   A22               : Float                 NULL    
+   A23               : Float                 NULL    
+   A24               : Float                 NULL    
+   A25               : Float                 NULL    
+   A26               : Float                 NULL    
+   A27               : Float                 NULL    
+   A28               : Float                 NULL    
+   A29               : Float                 NULL    
+   A30               : Float                 NULL    
+   A31               : Float                 NULL    
+   A32               : Float                 NULL    
+   A33               : Float                 NULL    
+   A34               : Float                 NULL    
+   A35               : Float                 NULL    
+   A36               : Float                 NULL    
+   A37               : Float                 NULL    
+   A38               : Float                 NULL    
+   A39               : Float                 NULL    
+   A40               : Float                 NULL    
+   A41               : Float                 NULL    
+   A42               : Float                 NULL    
+   A43               : Float                 NULL    
+   A44               : Float                 NULL    
+   A45               : Float                 NULL    
+   A46               : Float                 NULL    
+   A47               : Float                 NULL    
+   A48               : Float                 NULL    
+   A49               : Float                 NULL    
+   A50               : Float                 NULL    
+   A51               : Float                 NULL    
+   A52               : Float                 NULL    
+   A53               : Float                 NULL    
+   A54               : Float                 NULL    
+   A55               : Float                 NULL    
+   A56               : Float                 NULL    
+   A57               : Float                 NULL    
+   A58               : Float                 NULL    
+   A59               : Float                 NULL    
+   A60               : Float                 NULL    
+   A61               : Float                 NULL    
+   A62               : Float                 NULL    
+   A63               : Float                 NULL    
+   A64               : Float                 NULL    
+   A65               : Float                 NULL    
+   A66               : Float                 NULL    
+   A67               : Float                 NULL    
+   A68               : Float                 NULL    
+   A69               : Float                 NULL    
+   A70               : Float                 NULL    
+   A71               : Float                 NULL    
+   A72               : Float                 NULL    
+   A73               : Float                 NULL    
+   A74               : Float                 NULL    
+   A75               : Float                 NULL    
+   A76               : Float                 NULL    
+   A77               : Float                 NULL    
+   A78               : Float                 NULL    
+   A79               : Float                 NULL    
+   A80               : Float                 NULL    
+   A81               : Float                 NULL    
+   A82               : Float                 NULL    
+   A83               : Float                 NULL    
+   A84               : Float                 NULL    
+   A85               : Float                 NULL    
+   A86               : Float                 NULL    
+   A87               : Float                 NULL    
+   A88               : Float                 NULL    
+   A89               : Float                 NULL    
+   A90               : Float                 NULL    
+   A91               : Float                 NULL    
+   A92               : Float                 NULL    
+   A93               : Float                 NULL    
+   A94               : Float                 NULL    
+   X                 : String[11]            NULL    
+   Y                 : String[11]            NULL    
+   Ox                : Float                 NULL    
+   AW                : Float                 NULL    
+   AWA               : Float                 NULL    
+   MolFact           : Float                 NULL    
+   MolFactAW         : Float                 NULL    
+   Num               : Integer               NULL    
+   Sample            : String[16]            NULL    
+   Summa             : Float                 NULL    
+   Source            : Integer               NULL    
+   GeolId            : Integer               NULL    
+   Rock              : Integer               NULL    
+   Region            : Integer               NULL    
+   GBody             : Integer               NULL    
+}
+
+INDEXES:
+   AnId
+      [Primary Key,Unique,Case Sensitive]
+   Sample
+   Descript
+      [Case Sensitive]
+   ArrId
+      [Case Sensitive]
+   GeolId
+      [Case Sensitive]
+   Rock
+      [Case Sensitive]
+   Region
+      [Case Sensitive]
+   GBody
+      [Case Sensitive]
+   ArrId;R;Eq
+      [Case Sensitive]
+   ArrId;Num
+   ArrId;Num;Sample
+
+RELATIONS
+   TABLE IS MASTER
+      Relation name        =DBInfoForm
+      Dependant table name =ListData.DB
+      Modify state         =CASCADE
+      Delete state         =RESTRICT
+        Relation fields
+          AnId=>ListData.Anal
+
+
+   TABLE IS DEPENDANT
+      Relation name     =DBInfoForm
+      Master table name =Rocks.db
+      Modify state      =RESTRICT
+      Delete state      =RESTRICT
+        Relation fields
+          Rock=>Rocks.Id
+
+      Relation name     =DBInfoForm
+      Master table name =Regions.db
+      Modify state      =RESTRICT
+      Delete state      =RESTRICT
+        Relation fields
+          Region=>Regions.ID
+
+      Relation name     =DBInfoForm
+      Master table name =MainRha.DB
+      Modify state      =CASCADE
+      Delete state      =RESTRICT
+        Relation fields
+          ArrId=>MainRha.Id
+
+      Relation name     =DBInfoForm
+      Master table name =GeolIds.db
+      Modify state      =CASCADE
+      Delete state      =RESTRICT
+        Relation fields
+          GeolId=>GeolIds.ID
+
+      Relation name     =DBInfoForm
+      Master table name =GBodies.db
+      Modify state      =RESTRICT
+      Delete state      =RESTRICT
+        Relation fields
+          GBody=>GBodies.ID
+
+
+******************************************
+*                 Regions                *
+******************************************
+TABLE Regions {
+   ID                : AutoInc               NULL     <PK>
+   Region            : String[20]            NULL    
+   Descript          : String[40]            NULL    
+}
+
+INDEXES:
+   ID
+      [Primary Key,Unique,Case Sensitive]
+   Region
+      [Unique,Case Sensitive]
+
+RELATIONS
+   TABLE IS MASTER
+      Relation name        =DBInfoForm
+      Dependant table name =RHAData.DB
+      Modify state         =RESTRICT
+      Delete state         =RESTRICT
+        Relation fields
+          ID=>RHAData.Region
+
+
+******************************************
+*                 MainRHA                *
+******************************************
+TABLE MainRHA {
+   Id                : AutoInc               NULL     <PK>
+   ArrayName         : String[80]            NOT NULL
+   Source            : Integer               NULL    
+   Type              : String[2]             NULL    
+   Title1            : String[255]           NOT NULL
+   Title2            : String[255]           NULL    
+   NAnal             : SmallInt              NULL    
+   NComp             : SmallInt              NOT NULL
+   Descript          : String[255]           NULL    
+   MaxNum            : Integer               NULL    
+}
+
+INDEXES:
+   Id
+      [Primary Key,Unique,Case Sensitive]
+   ArrayName
+   Source
+      [Case Sensitive]
+
+RELATIONS
+   TABLE IS MASTER
+      Relation name        =DBInfoForm
+      Dependant table name =RHAData.DB
+      Modify state         =CASCADE
+      Delete state         =RESTRICT
+        Relation fields
+          Id=>RHAData.ArrId
+
+
+   TABLE IS DEPENDANT
+      Relation name     =DBInfoForm
+      Master table name =Source.db
+      Modify state      =RESTRICT
+      Delete state      =RESTRICT
+        Relation fields
+          Source=>Source.Id
+
+
+******************************************
+*                ListData                *
+******************************************
+TABLE ListData {
+   ID                : AutoInc               NULL     <PK>
+   List              : Integer               NULL    
+   Anal              : Integer               NULL    
+}
+
+INDEXES:
+   ID
+      [Primary Key,Unique,Case Sensitive]
+   Anal
+      [Case Sensitive]
+   List
+      [Case Sensitive]
+
+RELATIONS
+
+   TABLE IS DEPENDANT
+      Relation name     =DBInfoForm
+      Master table name =Lists.db
+      Modify state      =CASCADE
+      Delete state      =RESTRICT
+        Relation fields
+          List=>Lists.ID
+
+      Relation name     =DBInfoForm
+      Master table name =RHAData.DB
+      Modify state      =CASCADE
+      Delete state      =RESTRICT
+        Relation fields
+          Anal=>RHAData.AnId
+
+
+******************************************
+*                 GeolIds                *
+******************************************
+TABLE GeolIds {
+   ID                : AutoInc               NULL     <PK>
+   GeolId            : String[20]            NULL    
+   Descript          : String[40]            NULL    
+}
+
+INDEXES:
+   ID
+      [Primary Key,Unique,Case Sensitive]
+   GeolId
+      [Unique,Case Sensitive]
+
+RELATIONS
+   TABLE IS MASTER
+      Relation name        =DBInfoForm
+      Dependant table name =RHAData.DB
+      Modify state         =CASCADE
+      Delete state         =RESTRICT
+        Relation fields
+          ID=>RHAData.GeolId
+
+
+******************************************
+*                 GBodies                *
+******************************************
+TABLE GBodies {
+   ID                : AutoInc               NULL     <PK>
+   GBody             : String[20]            NULL    
+   Descript          : String[40]            NULL    
+}
+
+INDEXES:
+   ID
+      [Primary Key,Unique,Case Sensitive]
+   GBody
+      [Unique,Case Sensitive]
+
+RELATIONS
+   TABLE IS MASTER
+      Relation name        =DBInfoForm
+      Dependant table name =RHAData.DB
+      Modify state         =RESTRICT
+      Delete state         =RESTRICT
+        Relation fields
+          ID=>RHAData.GBody
+
+
+******************************************
+*                Sinonims                *
+******************************************
+TABLE Sinonims {
+   Id                : AutoInc               NULL     <PK>
+   FieldId           : Integer               NULL    
+   Text              : String[30]            NULL    
+}
+
+INDEXES:
+   Id
+      [Primary Key,Unique,Case Sensitive]
+   FieldId
+   FieldId
+      [Case Sensitive]
+
+RELATIONS
+
+   TABLE IS DEPENDANT
+      Relation name     =DBInfoForm
+      Master table name =ImpFields.DB
+      Modify state      =CASCADE
+      Delete state      =RESTRICT
+        Relation fields
+          FieldId=>ImpFields.Id
+
+
+******************************************
+*                Dictionar               *
+******************************************
+TABLE Dictionar {
+   Id                : AutoInc               NULL     <PK>
+   FieldId           : Integer               NULL    
+   Word              : String[40]            NULL    
+   Desc              : Integer               NULL    
+}
+
+INDEXES:
+   Id
+      [Primary Key,Unique,Case Sensitive]
+   FieldId;Word
+      [Unique,Case Sensitive]
+   FieldId
+      [Case Sensitive]
+
+RELATIONS
+
+   TABLE IS DEPENDANT
+      Relation name     =DBInfoForm
+      Master table name =ImpFields.DB
+      Modify state      =CASCADE
+      Delete state      =RESTRICT
+        Relation fields
+          FieldId=>ImpFields.Id
+
+
+******************************************
+*                  Vars                  *
+******************************************
+TABLE Vars {
+   Id                : AutoInc               NULL     <PK>
+   Name              : String[16]            NULL    
+   FLDName           : String[40]            NULL    
+   RecId             : Integer               NULL    
+   Pos               : Integer               NULL    
+   DFormat           : String[12]            NULL    
+}
+
+INDEXES:
+   Id
+      [Primary Key,Unique,Case Sensitive]
+   RecId
+      [Case Sensitive]
+   RecId;Pos
+
+RELATIONS
+
+   TABLE IS DEPENDANT
+      Relation name     =DBInfoForm
+      Master table name =Recalcs.db
+      Modify state      =CASCADE
+      Delete state      =RESTRICT
+        Relation fields
+          RecId=>Recalcs.Id
+
+
+******************************************
+*                 Recalcs                *
+******************************************
+TABLE Recalcs {
+   Id                : AutoInc               NULL     <PK>
+   Name              : String[20]            NOT NULL
+   Descript          : String[255]           NULL    
+   Aw                : Boolean               NULL    
+   C100              : Boolean               NULL    
+   W                 : Boolean               NULL    
+   Mols              : Boolean               NULL    
+   Validated         : Boolean               NULL    
+   Source            : String[80]            NULL    
+}
+
+INDEXES:
+   Id
+      [Primary Key,Unique,Case Sensitive]
+
+RELATIONS
+   TABLE IS MASTER
+      Relation name        =DBInfoForm
+      Dependant table name =Vars.DB
+      Modify state         =CASCADE
+      Delete state         =RESTRICT
+        Relation fields
+          Id=>Vars.RecId
+
+
+******************************************
+*                 Classif                *
+******************************************
+TABLE Classif {
+   ID                : AutoInc               NULL     <PK>
+   Diagr             : Integer               NULL    
+   Anal              : Integer               NULL    
+   Class             : String[12]            NULL    
+}
+
+INDEXES:
+   ID
+      [Primary Key,Unique,Case Sensitive]
+   Anal
+      [Case Sensitive]
+   Diagr;Anal
+      [Case Sensitive]
+

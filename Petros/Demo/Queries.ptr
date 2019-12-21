@@ -1,0 +1,379 @@
+63
+1002_CB-Cal-Kola
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 616)
+) 
+ORDER BY rhadata."Num"
+1002_CB-Cal-Sall
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 612)
+) 
+ORDER BY rhadata."Num"
+1002_CB-Dol-Sall
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 613)
+) 
+ORDER BY rhadata."Num"
+1002_CB-Mgs-Sall
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 614)
+) 
+ORDER BY rhadata."Num"
+1002_CB-Sd-Sall
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 615)
+) 
+ORDER BY rhadata."Num"
+1013-t5-olivinites
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 664)
+) 
+ORDER BY rhadata."Num"
+1014+1017-carbonatites
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 667)
+) 
+ORDER BY rhadata."Num"
+1014-t5.2-phoscorites
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 665)
+) 
+ORDER BY rhadata."Num"
+1014-t5.3-phoscorites av.
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 666)
+) 
+ORDER BY rhadata."Num"
+1017-t1,2-phoscorites
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 668)
+) 
+ORDER BY rhadata."Num"
+1019-t1-Fe-carbonatites
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 644)
+) 
+ORDER BY rhadata."Num"
+1024-diorites
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 640)
+) 
+ORDER BY rhadata."Num"
+1024-granites
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 639)
+) 
+ORDER BY rhadata."Num"
+1037-t24_cumulative trend
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 565)
+) 
+ORDER BY rhadata."Num"
+1052-t1-Phl
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 600)
+) 
+ORDER BY rhadata."Num"
+1052-t1-Tphl
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 602)
+) 
+ORDER BY rhadata."Num"
+1052-t2_Phl, Bt
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 652)
+) 
+ORDER BY rhadata."Num"
+1057-t1-Na-carbonatite
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 645)
+) 
+ORDER BY rhadata."Num"
+1058-t6_carbonatites
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 646)
+) 
+ORDER BY rhadata."Num"
+1059-t5_primary magma
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 647)
+) 
+ORDER BY rhadata."Num"
+1065_Igneous rocks-av
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 637)
+) 
+ORDER BY rhadata."Num"
+1075-t2_carbonatites
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 648)
+) 
+ORDER BY rhadata."Num"
+1076-t6.3.1.2_microcline
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 653)
+) 
+ORDER BY rhadata."Num"
+1090-t6_carbonatites
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 649)
+) 
+ORDER BY rhadata."Num"
+1160-t12,13,20_mica-Bt,Stp
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 581)
+) 
+ORDER BY rhadata."Num"
+1160-t41-Vrm
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 597)
+) 
+ORDER BY rhadata."Num"
+1160-t5_Ms
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 579)
+) 
+ORDER BY rhadata."Num"
+1160-t7,16-19_mica_Li-Ca
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 580)
+) 
+ORDER BY rhadata."Num"
+1162+1160_Pg
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 620)
+) 
+ORDER BY rhadata."Num"
+1162-mica_NK1
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 599)
+) 
+ORDER BY rhadata."Num"
+1162-mica_NK2
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 589)
+) 
+ORDER BY rhadata."Num"
+1162-mica_NK3
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 590)
+) 
+ORDER BY rhadata."Num"
+1162-mica_Tphl
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 603)
+) 
+ORDER BY rhadata."Num"
+1162-mica_Vica
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 617)
+) 
+ORDER BY rhadata."Num"
+1168-t1-ore gabbro
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 634)
+) 
+ORDER BY rhadata."Num"
+1168-t2-ore-gabbro
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 633)
+) 
+ORDER BY rhadata."Num"
+1168-t3-basalt
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 635)
+) 
+ORDER BY rhadata."Num"
+1174-t1-Li-mica
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 595)
+) 
+ORDER BY rhadata."Num"
+1208-p129-33_Ms
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 618)
+) 
+ORDER BY rhadata."Num"
+1208-t2_Ms
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 619)
+) 
+ORDER BY rhadata."Num"
+1216-t1-Mica
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 621)
+) 
+ORDER BY rhadata."Num"
+40-lavas Merampi
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 670)
+) 
+ORDER BY rhadata."Num"
+40-volcanites, Krakatau
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 669)
+) 
+ORDER BY rhadata."Num"
+402-tectites
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 671)
+) 
+ORDER BY rhadata."Num"
+7-t198-olivinites
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 661)
+) 
+ORDER BY rhadata."Num"
+7-t199-clinopyroxenites
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 662)
+) 
+ORDER BY rhadata."Num"
+7-t202+204-Caledonian complex av
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 663)
+) 
+ORDER BY rhadata."Num"
+7-t25-Kovdor mafic rocks
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 658)
+) 
+ORDER BY rhadata."Num"
+7-t27-melilite rocks
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 659)
+) 
+ORDER BY rhadata."Num"
+7-t33-melilite rocks, Turiy
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 660)
+) 
+ORDER BY rhadata."Num"
+833-t2,3_andesite
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 654)
+) 
+ORDER BY rhadata."Num"
+834-t1-3_volcanic rocks
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 655)
+) 
+ORDER BY rhadata."Num"
+838-t2-basalts
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 642)
+) 
+ORDER BY rhadata."Num"
+950_borders of EnAn field
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 650)
+) 
+ORDER BY rhadata."Num"
+960-t21-igneous rocks
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 643)
+) 
+ORDER BY rhadata."Num"
+960-t34-shields
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 641)
+) 
+ORDER BY rhadata."Num"
+987-t1-volcanites standard
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 656)
+) 
+ORDER BY rhadata."Num"
+987-t2-acid standards
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 657)
+) 
+ORDER BY rhadata."Num"
+Tphl all
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" IN (602, 603))
+) 
+ORDER BY rhadata."Num"
+Phl-all
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" IN (600, 583))
+) 
+ORDER BY rhadata."Num"
+1208_Ms
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" IN (618, 619))
+) 
+ORDER BY rhadata."Num"
+Muscovite
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" IN (618, 619, 579))
+) 
+ORDER BY rhadata."Num"
+Li-Ca mica
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" IN (595, 580))
+) 
+ORDER BY rhadata."Num"

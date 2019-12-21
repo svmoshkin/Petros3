@@ -1,0 +1,65 @@
+9
+Spider/Primordial Mantle
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 392)
+) 
+ORDER BY rhadata."Sample",rhadata."Descript"
+Spider/Primordial Mantle
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" = 392)
+) 
+ORDER BY rhadata."Sample",rhadata."Descript"
+North
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(AnId in (10297,10298,10299,10300,10301,10302,10303,10304,10305,10306,10307,10308,10309,10310,10384,10385,10386,10387))
+) 
+ORDER BY rhadata."Sample",rhadata."Descript"
+South
+6
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" IN (413))
+)AND(
+(rhadata."DESCRIPT" LIKE "%S%")
+) 
+ORDER BY rhadata."Sample",rhadata."Descript"
+Easth
+6
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" IN (413))
+)AND(
+(rhadata."DESCRIPT" LIKE "%E%")
+) 
+ORDER BY rhadata."Sample",rhadata."Descript"
+Vuorio
+6
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" IN (413))
+)AND(
+(rhadata."DESCRIPT" LIKE "%V%")
+) 
+ORDER BY rhadata."Sample",rhadata."Descript"
+ќфиолиты
+6
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" IN (413))
+)AND(
+(rhadata."DESCRIPT" LIKE "%оф%")
+) 
+ORDER BY rhadata."Sample",rhadata."Descript"
+траппы
+4
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" IN (415))
+) 
+ORDER BY rhadata."Sample",rhadata."Descript"
+north
+6
+Select rhadata.* From "RHADATA.DB" rhadata Where (
+(rhadata."ArrId" IN (416))
+)AND(
+(rhadata."DESCRIPT" LIKE "%N%")
+) 
+ORDER BY rhadata."Sample",rhadata."Descript"
