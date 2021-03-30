@@ -109,7 +109,7 @@ begin
 end;
 
 function TitleIsValid(const S: string; Edit: TComboBox; NotChem: Boolean = False): Boolean;
-var I, Beg, EN: Byte;
+var I, Beg, EN: Integer;
   k: integer;
   RS, fs: string;
 begin
@@ -118,11 +118,14 @@ begin
   repeat
     RS := Copy(S, Beg, Length(S) - Beg + 1);
     EN := Pos(',', RS);
-    if EN = 0 then EN := Length(RS) + 1;
+    if EN = 0 then
+      EN := Length(RS) + 1;
     fs := Copy(RS, 1, EN - 1);
-    if fs = '' then break;
+    if fs = '' then
+      break;
     I := ValidFormula(fs, NotChem);
-    if I > 0 then break;
+    if I > 0 then
+      break;
     Beg := Beg + EN;
     inc(k);
   until EN = Length(RS) + 1;
@@ -132,8 +135,10 @@ begin
       ShowMessage(stTooMany + IntToStr(K) + ')');
     exit;
   end;
-  if I = 0 then Result := True
-  else begin Result := False;
+  if I = 0 then
+    Result := True
+  else begin
+    Result := False;
     if Assigned(Edit) then begin
       ShowMessage(stCompErr);
       Edit.SetFocus;
@@ -285,6 +290,9 @@ begin
   if ATitle.Count = 0 then exit;
   Sum := 0;
   Sum1 := 0;
+  if CalcFirst then
+  for i:= 1 to MendCount do
+    S[i]:=-1;
   if NotChem then begin
     if not CalcFirst then
       exit;
@@ -475,10 +483,10 @@ begin
       if AtomnColich[8] > 0 then
         for K := MaxHALen + 1 to N do
           AtomnColich[8] := AtomnColich[8] - Oxy[S[K]];
-      for I := 1 to MaxHALen do
+      for I := 1 to min(MaxHALen,n) do
         if AtomnColich[S[I]] > Sum0 * MinAtDol then
           Sum := Sum + AtomnColich[S[I]];
-      for I := 1 to MaxHALen do
+      for I := 1 to min(MaxHALen,n) do
         if AtomnColich[S[I]] > 0 then
           AtomnColich[S[I]] := AtomnColich[S[I]] / Sum;
     end {CalcTwo};

@@ -648,7 +648,7 @@ begin
             break
           else begin
             SelStart := i;
-            SelLength := 2;
+            SelLength := Length(DM1.tabElem['Elem']);
             SelAttributes.BackColor := DM1.tabElem['Color'];
           end;
         until False;

@@ -343,7 +343,10 @@ end; {_ procedure TAnDlg.FormCloseQuery(Sender: TObject; var CanClose: Boolean);
 procedure TAnDlg.CancelBtnClick(Sender: TObject);
 begin
   Ok := True;
+  try
   Table1.Cancel;
+  except
+  end;
  // CLOSE;
 end; {_ procedure TAnDlg.CancelBtnClick(Sender: TObject); _}
 

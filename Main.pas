@@ -152,6 +152,7 @@ type
     Convertolddatabase1: TMenuItem;
     N7: TMenuItem;
     ExecuteSQL1: TMenuItem;
+    Mergedatasets1: TMenuItem;
     procedure FormCreate(Sender: TObject);
     procedure ShowHint(Sender: TObject);
     procedure WindowTile(Sender: TObject);
@@ -207,6 +208,7 @@ type
     procedure ADistExecute(Sender: TObject);
     procedure Convertolddatabase1Click(Sender: TObject);
     procedure ExecuteSQL1Click(Sender: TObject);
+    procedure Mergedatasets1Click(Sender: TObject);
 
   public
     AnType: TDatType;
@@ -233,7 +235,7 @@ uses LoadPr, RollQuery, MRollUp, AtProc, TrioGraph, RHABrows, Biblio,
   NewArr, Analise, ArrayRolls, ImportAn, Spaider, Devid, Classif,
   ImpWiz, Lists, LookUps, StDiagrams, Stat, Correlat, BandGr, Dictionar,
   StRecalc, Options, ImpLookUps, AnalInput, Registrat, Distance, DBConvert,
-  ADOUtilsS, ExecSQL;
+  ADOUtilsS, ExecSQL, Merge;
 
 
 {$R *.DFM}
@@ -333,6 +335,7 @@ var
   DList: TStringList;
   CD: TDateTime;
   MustBackUp: Boolean;
+  Res: Boolean;
 begin
   try
     CloseAll;
@@ -342,69 +345,71 @@ begin
   StForm.Free;
   try
     Reg.RootKey := HKEY_LOCAL_MACHINE;
-    Reg.OpenKey('Software\Petros\Petros 3', False);
+    Res := Reg.OpenKey('Software\Petros\Petros 3', False);
     {Reg.OPenKey('Petros', True);
     Reg.OPenKey('Petros 3', True); }
-    Path := Reg.ReadString('BackUpDir');
+    if Res then
+      Path := Reg.ReadString('BackUpDir');
 
 
     if Path = '' then
-      ShowMessage('Fail to back up database. Error in registry key. You must to reinstall Petros!')
-    else begin
-      DateTimeToString(CurD, 'yyyymmdd', Date);
-      Application.UpdateFormatSettings := False;
-      DateSeparator := '/';
-      ShortDateFormat := 'yyyy/mm/dd';
+      Path := ExtractFilePath(ParamStr(0)) + 'Base\BackUp';
+    ForceDirectories(Path);
+   // else begin
+    DateTimeToString(CurD, 'yyyymmdd', Date);
+    Application.UpdateFormatSettings := False;
+    DateSeparator := '/';
+    ShortDateFormat := 'yyyy/mm/dd';
+    i := Pos('"', Path);
+    while i > 0 do begin
+      Delete(Path, i, 1);
       i := Pos('"', Path);
-      while i > 0 do begin
-        Delete(Path, i, 1);
-        i := Pos('"', Path);
-      end;
-      Path := Trim(Path);
-      if Path[Length(Path)] <> '\' then
-        Path := Path + '\';
-      FN := Path + '*.bak';
-{$IFDEF DEBUG}
-      ShowMessage(Path);
-{$ENDIF}
-      try
-        DList := TStringList.Create;
-        MustBackUp := True;
-        if FindFirst(FN, faAnyFile, sr) = 0 then begin
-          repeat
-            if pos('pb', sr.Name) = 1 then
-            begin
-              DD := Copy(sr.Name, 3, 4) + '/' + Copy(sr.Name, 7, 2) + '/' + Copy(sr.Name, 9, 2);
-              CD := STrToDate(DD);
-              if Date - CD > 30 then
-                DList.Add(Sr.Name);
-              if Date - CD < 5 then
-                MustBackUp := False;
-            end;
-          until FindNext(sr) <> 0;
-          SysUtils.FindClose(sr);
-        end;
-        if MustBackUp then begin
-          try
-
-            Screen.Cursor := crHourGlass;
-            try
-              ExecQr('BACKUP DATABASE PetrosBase ' +
-                'TO DISK=''' + Path + 'pb' + CurD + '.bak''', DM1.q1Time);
-              ShowMessage('BACKUP DATABASE successfully processed');
-            except on E: Exception do
-                ShowMessage('Back up failed. ' + E.Message);
-            end;
-          finally
-            Screen.Cursor := crDefault;
-          end;
-        end;
-        for i := 0 to DList.Count - 1 do
-          SysUtils.DeleteFile(Path + 'BackUp\' + DList[i]);
-      finally
-        DList.Free;
-      end;
     end;
+    Path := Trim(Path);
+    if Path[Length(Path)] <> '\' then
+      Path := Path + '\';
+    FN := Path + '*.bak';
+{$IFDEF DEBUG}
+    ShowMessage(Path);
+{$ENDIF}
+    try
+      DList := TStringList.Create;
+      MustBackUp := True;
+      if FindFirst(FN, faAnyFile, sr) = 0 then begin
+        repeat
+          if pos('pb', sr.Name) = 1 then
+          begin
+            DD := Copy(sr.Name, 3, 4) + '/' + Copy(sr.Name, 7, 2) + '/' + Copy(sr.Name, 9, 2);
+            CD := STrToDate(DD);
+            if Date - CD > 30 then
+              DList.Add(Sr.Name);
+            if Date - CD < 5 then
+              MustBackUp := False;
+          end;
+        until FindNext(sr) <> 0;
+        SysUtils.FindClose(sr);
+      end;
+      if MustBackUp then begin
+        try
+
+          Screen.Cursor := crHourGlass;
+          try
+            ExecQr('BACKUP DATABASE PetrosBase ' +
+              'TO DISK=''' + Path + 'pb' + CurD + '.bak''', DM1.q1Time);
+            ShowMessage('BACKUP DATABASE successfully processed');
+          except on E: Exception do
+              ShowMessage('Back up failed. ' + E.Message);
+          end;
+        finally
+          Screen.Cursor := crDefault;
+        end;
+      end;
+      for i := 0 to DList.Count - 1 do
+        SysUtils.DeleteFile(Path + 'BackUp\' + DList[i]);
+    finally
+      DList.Free;
+    end;
+  //  end;
   {
   Reg.WriteInteger('QuCount', TrioForm.SQLs.Count);
   Reg.WriteString('FontName', TrioForm.GeoChart1.Legend.Font.Name);
@@ -1076,6 +1081,17 @@ end;
 procedure TMainForm.ExecuteSQL1Click(Sender: TObject);
 begin
   fExecSQL.ShowModal;
+end;
+
+procedure TMainForm.Mergedatasets1Click(Sender: TObject);
+begin
+  if DM1.TabM1['ID'] <> Null then begin
+    if OpenQr('Select Id,ArrayName from MainRHA  where Title1='''+DM1.TabM1['Title1']+
+    ''' and Alfa='+IntToStr(DM1.TabM1['Alfa']) +' and ID!='+IntToStr(DM1.TabM1['ID']) ,DM1.qLongTime1) then
+      fMerge.ShowModal
+    else
+     ShowMessage('There are no datasets in the database with the same components sequence ');
+  end;
 end;
 
 end.

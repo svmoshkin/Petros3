@@ -2,10 +2,10 @@ object DM1: TDM1
   OldCreateOrder = False
   OnCreate = DataModuleCreate
   OnDestroy = DataModuleDestroy
-  Left = 234
-  Top = 185
-  Height = 612
-  Width = 812
+  Left = 227
+  Top = 66
+  Height = 617
+  Width = 900
   object DataSource4: TDataSource
     DataSet = qSource
     Left = 122

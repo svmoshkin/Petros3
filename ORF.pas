@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
   StdCtrls, Buttons, ExtCtrls, ComCtrls, Printers, ActnList, Menus,
-  JvExStdCtrls, JvRichEdit;
+ { JvExStdCtrls,} JvRichEdit;
 
 type
   TORFForm = class(TForm)

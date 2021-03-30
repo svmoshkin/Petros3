@@ -1,8 +1,8 @@
 object RegrForm: TRegrForm
-  Left = 117
-  Top = 144
+  Left = 472
+  Top = 323
   Width = 627
-  Height = 274
+  Height = 294
   HelpContext = 99
   Caption = 'RegrForm'
   Color = clBtnFace
@@ -18,13 +18,13 @@ object RegrForm: TRegrForm
   OnActivate = FormActivate
   OnClose = FormClose
   DesignSize = (
-    619
-    247)
+    611
+    255)
   PixelsPerInch = 96
   TextHeight = 13
   object BitBtn1: TBitBtn
-    Left = 48
-    Top = 220
+    Left = 45
+    Top = 228
     Width = 75
     Height = 25
     Anchors = [akLeft, akBottom]
@@ -33,8 +33,8 @@ object RegrForm: TRegrForm
     Kind = bkOK
   end
   object BitBtn2: TBitBtn
-    Left = 350
-    Top = 220
+    Left = 344
+    Top = 228
     Width = 75
     Height = 25
     Anchors = [akLeft, akBottom]
@@ -59,8 +59,8 @@ object RegrForm: TRegrForm
   object Memo1: TRichEdit
     Left = 0
     Top = 0
-    Width = 619
-    Height = 213
+    Width = 611
+    Height = 223
     Align = alTop
     Anchors = [akLeft, akTop, akRight, akBottom]
     Font.Charset = RUSSIAN_CHARSET
@@ -76,7 +76,7 @@ object RegrForm: TRegrForm
   end
   object BitBtn3: TBitBtn
     Left = 436
-    Top = 220
+    Top = 228
     Width = 75
     Height = 25
     Anchors = [akLeft, akBottom]

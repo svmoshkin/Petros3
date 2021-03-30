@@ -46,7 +46,7 @@ var
   ExptoTextForm: TExptoTextForm;
   Delim: char;
   ConstW : Boolean;
-  Ind: array[0..255] of Byte;
+  Ind: array[0..1024] of integer;
 
 resourcestring
   stFileSaved = 'Data succesfully saved to file ';
@@ -207,7 +207,7 @@ begin
   end;
   NFields := ListBox2.Items.Count;
   for i := 0 to NFields - 1 do
-    Ind[i] := Byte(TInt(ListBox2.Items.Objects[i]).N);
+    Ind[i] := TInt(ListBox2.Items.Objects[i]).N;
 end;
 
 procedure TExptoTextForm.SpeedButton1Click(Sender: TObject);

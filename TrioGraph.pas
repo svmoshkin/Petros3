@@ -131,7 +131,6 @@ type
     BitBtn3: TBitBtn;
     Butt4: TButton;
     BitBtn10: TBitBtn;
-    CheckBox16: TCheckBox;
     BtAY: TButton;
     ButtAX: TButton;
     XPRogr: TJvInterpreterProgram;
@@ -154,6 +153,7 @@ type
     Button23: TButton;
     Button24: TButton;
     CheckBox17: TCheckBox;
+    RadioGroup3: TRadioGroup;
     procedure PrintClick(Sender: TObject);
     procedure FormActivate(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -247,6 +247,7 @@ type
     procedure Button23Click(Sender: TObject);
     procedure Button24Click(Sender: TObject);
     procedure CheckBox17Click(Sender: TObject);
+    procedure RadioGroup3Click(Sender: TObject);
   private
     { Private declarations }
     fStandart: boolean;
@@ -915,7 +916,7 @@ var
 begin
   {if not Assigned(ChBoxes) then exit;}
   Label1.Repaint;
-  if CheckBox16.Checked then
+  if RadioGroup3.ItemIndex>0 then
     for j := 0 to Geochart1.Series.Count - 1 do
       if GeoChart1.Series[j].Active then
         for i := 0 to GeoChart1.Series[j].Count - 1 do begin
@@ -924,7 +925,10 @@ begin
             GeoChart1.Canvas.Font.Assign(GeoChart1.Legend.Font);
             GeoChart1.Canvas.Font.Style := [];
             GeoChart1.Canvas.Font.Height := 14;
-            GeoChart1.Canvas.TextOut(T.X - 8, T.y - 17, GeoChart1.Series[j].Items[i].Label2);
+            if  RadioGroup3.ItemIndex=1 then
+              GeoChart1.Canvas.TextOut(T.X - 8, T.y - 17, GeoChart1.Series[j].Items[i].Label2)
+            else
+              GeoChart1.Canvas.TextOut(T.X - 8, T.y - 17, GeoChart1.Series[j].Items[i].Label1)
           end;
         end;
   if GeoChart1.Trio or not CheckBox8.Checked then exit;
@@ -2916,6 +2920,11 @@ begin
       Diagr.Cod:=0;
      GeoChart1.Paint;
   end;
+end;
+
+procedure TTrioForm.RadioGroup3Click(Sender: TObject);
+begin
+     GeoChart1.Paint;
 end;
 
 end.

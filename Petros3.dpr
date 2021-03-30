@@ -14,7 +14,7 @@ uses
   Tasks in 'Tasks.pas' {NewProject},
   TaskSQL in 'TaskSQL.pas' {TaskSQLForm},
   TabMend in 'TabMend.pas' {MendForm},
-  MyUtils in '..\Utils\MyUtils.pas',
+  MyUtils in '..\..\UtilsPetr\MyUtils.pas',
   PetDBUtils in 'PetDBUtils.pas' {DbUtil},
   LoadPr in 'LoadPr.pas' {LoadPrForm},
   AnalInput in 'AnalInput.pas' {AnDlg},
@@ -62,9 +62,9 @@ uses
   Recalc in 'Recalc.pas' {AlgoForm},
   RecResult in 'RecResult.pas' {RecResForm},
   ListBrows in 'ListBrows.pas' {LBrowseForm},
-  Mend_C in '..\Mend\Mend_C.pas' {MendTabl: TControlGroupBox},
-  preview in '..\Trio\Preview.pas' {PrevForm},
-  ChartProp in '..\Trio\ChartProp.pas' {ChartPropertyForm},
+  Mend_C in '..\..\Mend\Mend_C.pas' {MendTabl: TControlGroupBox},
+  preview in '..\..\Trio\Preview.pas' {PrevForm},
+  ChartProp in '..\..\Trio\ChartProp.pas' {ChartPropertyForm},
   RHAGlobs in 'RHAGlobs.pas',
   Analise in 'Analise.pas',
   Registrat in 'Registrat.pas' {RegistrForm},
@@ -83,7 +83,8 @@ uses
   ImpAlphabet in 'ImpAlphabet.pas' {fImpAlpha},
   RollQuery in 'RollQuery.pas' {QueryRolls},
   ExecSQL in 'ExecSQL.pas' {fExecSQL},
-  DistType in 'DistType.pas' {fDistType};
+  DistType in 'DistType.pas' {fDistType},
+  Merge in 'Merge.pas' {fMerge};
 
 {$R *.res}
 var
@@ -123,7 +124,7 @@ begin
   Sp.PB.Progress := Sp.PB.Progress + 10;
   Application.ProcessMessages;
 
-
+  Application.CreateForm(TfMerge, fMerge);
   Application.CreateForm(TAnDlg, AnDlg);
 
   Application.CreateForm(TDlNew, DlNew);

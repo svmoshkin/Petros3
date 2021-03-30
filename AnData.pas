@@ -255,8 +255,8 @@ begin
     Lines.Add('');
     Lines.Add('    Rank formula');
     Lines.Add('  '+Rang.Caption);
-    S := '  RHA elem.number: ' + Label21.Caption + ';  En=' + Label11.Caption + '; E=' +
-      FormatFloat('###'+EnFormat, DM1.qAnal.FieldByName('E').AsFloat) + ';  An=' + Label13.Caption +
+    S := '  RHA elem.number: ' + Label21.Caption + ';  En=' +  FormatFloat('###'+EnFormat, DM1.qAnal.FieldByName('E').AsFloat)
+     + '; E=' +Label11.Caption + ';  An=' + Label13.Caption +
       ';  A=' + Label12.Caption + ';  T=' + FormatFloat('###'+EnFormat, DM1.qAnal.FieldByName('T').AsFloat)
       + ';  Tn=' + FormatFloat('###'+EnFormat, DM1.qAnal.FieldByName('Tn').AsFloat);
     Lines.Add(S);
